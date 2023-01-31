@@ -1,0 +1,641 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    background: transparent;
+    font-weight: normal;
+    text-decoration: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+body {
+    font-family: "fontello";
+    font-size: 17px;
+    color: #000;
+    overflow-x: hidden;
+    min-width: 320px;
+    font-weight: 500;
+}
+
+input,
+textarea,
+select {
+    font-family: "fontello";
+    font-weight: 500;
+}
+
+a {
+    color: #000;
+}
+
+.thumb {
+    display: block;
+}
+
+.thumb img {
+    display: block;
+    width: 100%;
+}
+
+p {
+    line-height: 1.6em;
+    font-size: 16px;
+    font-family: "fontello";
+    font-weight: 500;
+    color: #000;
+}
+
+.hidden {
+    display: none;
+}
+
+br.clear {
+    clear: both;
+    line-height: 0;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.flex-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+@font-face {
+    font-family: "GT-Eesti";
+    src: url("../fonts/GT-Eesti-Pro-Text-Light.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Light.woff") format("woff"),
+        url("../fonts/GT-Eesti-Pro-Text-Light.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "GT-Eesti";
+    src: url("../fonts/GT-Eesti-Pro-Text-Regular.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Regular.woff") format("woff"),
+        url("../fonts/GT-Eesti-Pro-Text-Regular.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: "GT-Eesti";
+    src: url("../fonts/GT-Eesti-Pro-Text-Medium.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Medium.woff") format("woff"),
+        url("../fonts/GT-Eesti-Pro-Text-Medium.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: "GT-Eesti";
+    src: url("../fonts/GT-Eesti-Pro-Text-Bold.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Bold.woff") format("woff"),
+        url("../fonts/GT-Eesti-Pro-Text-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+::-moz-placeholder {
+    color: #9b9b9b;
+    opacity: 1;
+}
+:-ms-input-placeholder {
+    color: #9b9b9b;
+    opacity: 1;
+}
+::placeholder {
+    color: #9b9b9b;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: #9b9b9b;
+}
+
+::-ms-input-placeholder {
+    color: #9b9b9b;
+}
+
+#spotlight {
+    padding-top: 25px;
+    background: url(/images/header-background.jpg) no-repeat;
+    background-position: 284px 0px;
+    background-size: contain;
+}
+#spotlight header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#spotlight header div.left {
+    width: 100px;
+}
+#spotlight header div.left img {
+    display: block;
+    width: 100%;
+}
+#spotlight header div.right ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#spotlight header div.right ul li {
+    margin-right: 15px;
+}
+#spotlight header div.right ul li a {
+    color: #fff;
+    font-size: 16px;
+}
+#spotlight header div.right ul li a.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 52px;
+}
+#spotlight header div.right ul li a.flex span {
+    width: 11px;
+}
+#spotlight header div.right ul li a.flex span img {
+    display: block;
+    width: 100%;
+}
+#spotlight header div.right ul li.last {
+    display: flex;
+    align-items: center;
+    margin-right: 0;
+    justify-content: space-between;
+    width: 70px;
+}
+#spotlight header div.right ul li.last span.head {
+    width: 30px;
+}
+#spotlight header div.right ul li.last span.head img {
+    display: block;
+    width: 100%;
+}
+#spotlight div.spotlight {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 90px 65px;
+}
+#spotlight div.spotlight div.left h3 {
+    font-size: 50px;
+    font-weight: bold;
+    color: #00bfd8;
+}
+#spotlight div.spotlight div.left h3 span {
+    font-weight: bold;
+    color: #000;
+}
+#spotlight div.spotlight div.left p {
+    color: grey;
+    margin: 25px 0;
+}
+#spotlight div.spotlight div.left a.button {
+    background-color: #00bfd8;
+    color: #fff;
+    font-weight: bold;
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-size: 13px;
+}
+#spotlight div.spotlight div.right {
+    width: 400px;
+}
+#spotlight div.spotlight div.right img {
+    display: block;
+    width: 100%;
+}
+
+#customer {
+    text-align: center;
+}
+#customer h3 {
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+#customer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 100px;
+    padding: 30px 0px;
+    background: rgba(58, 247, 206, 0.137);
+    width: 900px;
+}
+#customer ul li {
+    margin-right: 30px;
+}
+#customer ul :last-child {
+    margin-right: 0;
+}
+
+#services {
+    text-align: center;
+}
+#services h3 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+#services p {
+    color: grey;
+}
+#services ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+}
+#services ul li {
+    margin-right: 45px;
+    border: 1px solid rgba(128, 128, 128, 0.356);
+    border-radius: 5px;
+    padding: 35px 25px;
+    text-align: center;
+}
+#services ul li div {
+    width: 100px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+#services ul li div img {
+    display: block;
+    width: 100%;
+}
+#services ul li h4 {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+#services ul li p {
+    font-size: 13px;
+}
+#services ul :last-child {
+    margin-right: 0;
+}
+
+#details {
+    padding-top: 20px;
+}
+#details ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+#details ul li div.left {
+    margin-right: 100px;
+}
+#details ul li div.left h4 {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+#details ul li div.left p {
+    font-size: 12px;
+    margin-bottom: 25px;
+    color: grey;
+}
+#details ul li div.left a.button {
+    padding: 10px 20px;
+    background-color: #00bfd8;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 25px;
+    font-size: 13px;
+}
+#details ul li div.img {
+    width: 500px;
+}
+#details ul li div.img img {
+    display: block;
+    width: 100%;
+}
+#details ul li div.right {
+    margin-left: 100px;
+}
+#details ul li div.right h4 {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+#details ul li div.right ul {
+    margin-bottom: 25px;
+}
+#details ul li div.right ul li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 0;
+}
+#details ul li div.right ul li span {
+    width: 15px;
+    margin-right: 6px;
+}
+#details ul li div.right ul li span img {
+    display: block;
+    width: 100%;
+}
+#details ul li div.right ul li p {
+    font-size: 12px;
+    color: grey;
+}
+#details ul li div.right a.button {
+    padding: 10px 20px;
+    background-color: #00bfd8;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 25px;
+    font-size: 13px;
+}
+
+#pricing {
+    text-align: center;
+    padding: 30px 0 100px 0;
+}
+#pricing h3 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+#pricing p {
+    color: grey;
+}
+#pricing ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+#pricing ul li {
+    border: 1px solid rgba(128, 128, 128, 0.466);
+    border-radius: 7px;
+    margin-right: 30px;
+    padding: 30px 30px;
+    width: 280px;
+    position: relative;
+}
+#pricing ul li h4 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+#pricing ul li p {
+    font-size: 11px;
+}
+#pricing ul li div.price {
+    margin: 20px 0;
+    padding: 20px 0;
+    border-top: 1px solid rgba(128, 128, 128, 0.445);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.445);
+}
+#pricing ul li div.price h2 {
+    color: #00bfd8;
+    font-weight: bold;
+    font-size: 45px;
+}
+#pricing ul li div.price p {
+    font-size: 15px;
+}
+#pricing ul li div.description div.content {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 8px;
+}
+#pricing ul li div.description div.content span {
+    width: 15px;
+    margin-right: 10px;
+}
+#pricing ul li div.description div.content span img {
+    display: block;
+    width: 100%;
+}
+#pricing ul li div.description div.content p {
+    font-size: 15px;
+}
+#pricing ul li a.button {
+    padding: 10px 20px;
+    background-color: #00bfd8;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 25px;
+    font-size: 13px;
+    position: absolute;
+    right: 90px;
+    bottom: -17px;
+}
+#pricing ul :last-child {
+    margin-right: 0;
+}
+
+#form {
+    background: rgba(200, 255, 255, 0.164);
+    padding: 50px;
+}
+#form .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 80px 0;
+}
+#form .box div.left {
+    margin-right: 70px;
+}
+#form .box div.left h3 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+#form .box div.left p {
+    font-size: 15px;
+    color: grey;
+    margin-bottom: 20px;
+}
+#form .box div.left ul li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+#form .box div.left ul li span {
+    width: 18px;
+    margin-right: 6px;
+}
+#form .box div.left ul li span img {
+    display: block;
+    width: 100%;
+}
+#form .box div.left ul li p {
+    margin-bottom: 0;
+    font-size: 15px;
+}
+#form .box div.left ul li p b {
+    font-weight: bold;
+}
+#form .box div.right {
+    margin-left: 70px;
+}
+#form .box div.right input {
+    background: #fff;
+    padding: 10px 0px 10px 15px;
+    width: 380px;
+    border: 1px solid rgba(128, 128, 128, 0.397);
+    border-radius: 5px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+#form .box div.right button {
+    padding: 15px 158px;
+    background-color: #00bfd8;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 25px;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+#video {
+    padding: 100px 0;
+    text-align: center;
+}
+#video h3 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+#video span {
+    display: block;
+    width: 800px;
+    margin: 0 auto 20px;
+}
+#video span img {
+    display: block;
+    width: 100%;
+    border-radius: 20px;
+}
+#video p {
+    color: grey;
+    font-size: 14px;
+}
+#video p b {
+    font-weight: bold;
+}
+
+#team {
+    padding-bottom: 100px;
+    text-align: center;
+}
+#team h3 {
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+#team p {
+    color: grey;
+    margin-bottom: 50px;
+}
+#team ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#team ul li {
+    margin-right: 25px;
+}
+#team ul li span {
+    display: block;
+    width: 200px;
+    margin-bottom: 15px;
+}
+#team ul li span img {
+    display: block;
+    width: 100%;
+    border-radius: 100px;
+}
+#team ul li h2 {
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+#team ul li p {
+    color: grey;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+#team ul li ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#team ul li ul li {
+    margin-right: 10px;
+    width: 30px;
+}
+#team ul li ul li img {
+    display: block;
+    width: 100%;
+}
+#team ul :last-child {
+    margin-right: 0;
+}
+
+#about ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+#about ul li {
+    margin-right: 50px;
+}
+#about ul li h3 {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+#about ul li p {
+    color: grey;
+}
+#about ul li ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+#about ul li ul li {
+    width: 40px;
+    margin-right: 10px;
+}
+#about ul li ul li img {
+    display: block;
+    width: 100%;
+}
+#about ul li ul :last-child {
+    margin-right: 0;
+}
+#about ul :last-child {
+    margin-right: 0;
+}
+footer {
+    text-align: center;
+    color: grey;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    font-size: 15px;
+    border-top: 1px solid rgba(128, 128, 128, 0.13);
+}
