@@ -131,7 +131,7 @@ br.clear {
 
 #spotlight {
     padding-top: 25px;
-    background: url(/images/header-background.jpg) no-repeat;
+    background: url(../images/header-background.jpg) no-repeat;
     background-position: 284px 0px;
     background-size: contain;
 }
